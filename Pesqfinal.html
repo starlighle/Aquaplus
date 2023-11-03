@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linha do Tempo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+ 
+  <style>
+    .formatacao,
+    .btn {
+      text-align: justify;
+      padding: 20px;
+      font-size: 2em;
+      transition: 2s;
+    }
+
+    .nr {
+      color: #99e1ff;
+    }
+
+    .centralizado {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(128, 128, 128, 0.374);
+      transition: 2s;
+    }
+
+    .btn {
+      color: rgba(128, 128, 128, 0.374);
+    }
+
+    .btn:hover {
+      font-size: 2.5em;
+      transition: 2s;
+      color: black;
+    }
+
+    .centralizado:hover {
+      background-color: black;
+      transition: 2s;
+    }
+
+    .visao {
+      text-align: justify;
+      padding: 20px;
+      margin: 50px 10px;
+      border-end-end-radius: 10%;
+      border-radius: 30px;
+      border: 1px #99E1FF solid;
+      background-color: #99e1ff;
+    }
+
+    .central {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .central img {
+      width: 12%;
+    }
+
+    .mudar {
+      padding: 20px 0;
+      text-align: center;
+      background-color: #99E1FF;
+      font-family: 'Shrikhand', serif;
+    }
+
+    .container {
+      margin-top: 70px;
+    }
+
+    .produto {
+      display: flex;
+    }
+
+    .letras a{
+      color: black;
+    }
+     
+    .letras a:hover{
+        font-size: 1.9em;
+        font-weight: bold;
+        transition: 2s;
+        color: black;
+      } 
+      body {
+        /* background-color: aqua; */
+        background-color:white;
+      }
+
+
+      .minhaCor{
+        background-color:black;
+      }
+      ul li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 50px;
+      }
+
+
+      .centro {
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+        background-color: black;
+        margin: 0;
+        font-size: 3rem;
+      }
+
+
+      .logo,
+      .logo2 {
+        width: 80px;
+        height: auto;
+      }
+
+
+      .logo2 {
+        border-radius: 50%;
+      }
+     
+      .meuTamanho {
+        width: 200px;
+        height: auto;
+      }
+
+
+      /* .margem {
+        margin-top: 20%;
+      } */
+
+
+
+
+      /* Cards */
+      .card-img-top {
+        border-radius: 50px;
+        padding: 20px;
+      }
+
+
+
+
+      .minhaBorda {
+        border: 3px solid gray;
+        border-radius: 1rem;
+      }
+
+
+      .letras a{
+        transition: 2s;
+      }
+     
+
+
+     
+      .letras a:hover{
+        font-size: 1.9em;
+        font-weight: bold;
+        transition: 2s;
+      }
+
+
+      .card {
+        /* Atenção Não Digite o box-shadow escolha um */
+        /* O box-shadow foi obtido através do site abaixo procure pelo ==> Código #87 ou outro */
+        /* https://getcssscan.com/css-box-shadow-examples */
+        border-radius: 30px;
+        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+        /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+      }
+
+
+      .card-body {
+        padding: 25px;
+        margin-top: -15px;
+      }
+
+
+      /* ********** */
+      .video{
+        text-align: center;
+      }
+
+      .bg-body-tertiary{
+        background-color: rgb(248, 249, 250);
+      }
+
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary minhaBorda">
+    <div class="container-fluid">
+      <img src="logo final.jpg" alt="Logo" width="80" height="auto"
+        class="d-inline-block align-text-top  display-1">AguaPlus
+      <!-- <a class="navbar-brand" href="PESQ_01.html"> <img src="logo02.jpg" class="logo" alt="logo">AguaPlus </a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item letras">
+            <!-- <a class="nav-link active" aria-current="page" href="#">Técnico</a> -->
+            <a class="nav-link nav-letra" data-bs-toggle="modal" data-bs-target="#modal-contato"
+              href="#contato">Cadastro</a>
+          </li>
+
+
+          <li class="nav-item letras">
+            <a class="nav-link letras active" aria-current="page" href="Pesqfinal.html">Sobre a Empresa</a>
+          </li>
+
+          <li class="nav-item letras">
+            <a class="nav-link letras active" aria-current="page" href="#">Compra</a>
+          </li>
+
+
+          <li class="nav-item letras">
+            <a class="nav-link letras active" aria-current="page" href="#">Login</a>
+          </li>
+        </ul>
+
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <!-- Cards -->
+  <section>
+
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 g-5">
+          <!-- <div class="card" style="width: 18rem;"> -->
+
+  <h1 class="mudar">Produto</h1>
+  <div class="produto">
+    <img src="produto.png" height="300" width="300">
+    <p style="font-size:1.5em">O nosso bebedouro faz uma designação por luz ulyra violeta-C (UV-C) é um processo de
+      tratamento de água que utiliza radiação UV-C para eliminar ou inativar microorganismos patogênicos,como bacterias,
+      vírus e parasitas, presentes na água. A radiação UV-C tem um comprimento de onda entre 200 e 280 nanômetros, que é
+      eficaz para danificar o material genético desses microrganismos, impedindo sua capacidade de reprodução e causando
+      sua morte ou inativação.</p>
+  </div>
+
+
+  <div class="container">
+    <h1 class="text-center mudar">História</h1>
+    <!-- <div class="row row-cols-0 row-cols-md-6 g-0 py-5"> -->
+
+    <div class="row  py-5">
+
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">1990</h5>
+        </div>
+      </div>
+
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">1995</h5>
+        </div>
+      </div>
+
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">1997</h5>
+        </div>
+      </div>
+
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">2000</h5>
+        </div>
+      </div>
+
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">2010</h5>
+        </div>
+      </div>
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">2020</h5>
+        </div>
+      </div>
+
+      <div class="col   py-5">
+        <div class="centralizado">
+          <h5 class="btn">2023</h5>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Texto -->
+  <div>
+    <h1 class="text-center formatacao nr"><b><u>1990 - AguaPlus</u></b></h1>
+    <h2 class="formatacao item">Aquaplus começou em meados dos anos 1990, quando um grupo de empreendedores
+      visionários
+      se uniu para
+      abordar a
+      crescente preocupação com a qualidade da água potável e o uso excessivo de plástico descartável.</h2>
+  </div>
+
+
+  <div class="row  py-0">
+    <div class="col-4   py-0">
+
+      <div class="visao">
+
+        <div class="central">
+          <img src="olho.png" alt="Visao da Empresa">
+          <h2>Visão</h2>
+        </div>
+
+        <h2>Garantir uma melhor qualidade da água para os usuários,entregar produtos de qualidade e entregar produtos na
+          hora</h2>
+      </div>
+    </div>
+    <div class="col-4   py-0">
+
+      <div class="visao">
+
+        <div class="central">
+          <img src="diamante.png" alt="Valor da Empresa">
+          <h2>Valores</h2>
+        </div>
+
+        <h2>Sustentabilidade;<br>
+          Inovação;<br>
+          Qualidade de vida;<br>
+          Saúde;<br>
+          Eficiência;<br>
+          Respeito;<br>
+
+        </h2>
+      </div>
+    </div>
+
+    <div class="col-4   py-0">
+
+      <div class="visao">
+
+        <div class="central">
+          <img src="alvo.png" alt="Missão da Empresa">
+          <h2>Missão</h2>
+        </div>
+
+        <h2>Apresentar ao público um projeto inovador visando melhorar a qualidade de vida através da tecnologia
+          liderando esse mercado</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+     <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <script src="dados.js"></script>
+</body>
+</html>
+

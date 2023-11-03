@@ -1,0 +1,354 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body {
+        /* background-color: aqua; */
+        background-color:white;
+      }
+
+
+      .minhaCor{
+        background-color: #99E1FF;
+      }
+      ul li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 50px;
+      }
+
+
+      .centro {
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+        background-color: #99E1FF;
+        margin: 0;
+        font-size: 3rem;
+      }
+
+
+      .logo,
+      .logo2 {
+        width: 80px;
+        height: auto;
+      }
+
+
+      .logo2 {
+        border-radius: 50%;
+      }
+     
+      .meuTamanho {
+        width: 200px;
+        height: auto;
+      }
+
+
+      /* .margem {
+        margin-top: 20%;
+      } */
+
+
+
+
+      /* Cards */
+      .card-img-top {
+        border-radius: 50px;
+        padding: 20px;
+      }
+
+
+
+
+      .minhaBorda {
+        border: 3px solid gray;
+        border-radius: 1rem;
+      }
+
+
+      .letras a{
+        transition: 0.5s;
+      }
+     
+
+
+     
+      .letras a:hover{
+        font-size: 1.3em;
+        font-weight: bold;
+        transition: 0.5s;
+      }
+
+
+      .card {
+        /* Atenção Não Digite o box-shadow escolha um */
+        /* O box-shadow foi obtido através do site abaixo procure pelo ==> Código #87 ou outro */
+        /* https://getcssscan.com/css-box-shadow-examples */
+        border-radius: 30px;
+        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+        /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+      }
+
+
+      .card-body {
+        padding: 25px;
+        margin-top: -15px;
+      }
+
+
+      /* ********** */
+      .video{
+        text-align: center;
+      }
+    </style>
+
+
+    <title> AQUAPLUS </title>
+    <link rel="icon" type="image/x-icon" href="logo final.jpg">
+
+
+  </head>
+
+
+<body>
+
+
+  <header>
+    <div>
+      <h1 class="centro">AQUAPLUS</h1>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary    minhaBorda">
+      <div class="container-fluid">
+        <img src="logo final.jpg" alt="Logo" width="80" height="auto"
+          class="d-inline-block align-text-top  display-1">AguaPlus
+        <!-- <a class="navbar-brand" href="PESQ_01.html"> <img src="logo02.jpg" class="logo" alt="logo">AguaPlus </a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item letras">
+              <!-- <a class="nav-link active" aria-current="page" href="#">Técnico</a> -->
+              <a class="nav-link nav-letra" data-bs-toggle="modal" data-bs-target="#modal-contato"
+                href="#contato">Cadastro</a>
+            </li>
+
+
+            <li class="nav-item letras">
+              <a class="nav-link letras active" aria-current="page" href="Pesqfinal.html">Sobre a Empresa</a>
+            </li>
+
+            <li class="nav-item letras">
+              <a class="nav-link letras active" aria-current="page" href="#">Compra</a>
+            </li>
+
+
+            <li class="nav-item letras">
+              <a class="nav-link letras active" aria-current="page" href="#">Login</a>
+            </li>
+          </ul>
+
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Cards -->
+    <section>
+
+
+      <div class="container py-5">
+        <h1 class="text-center">Nossos Produtos</h1>
+        <div class="row">
+
+
+          <div class="col-sm-12 col-md-12 col-lg-4 g-5">
+            <!-- <div class="card" style="width: 18rem;"> -->
+            <div class="card h-100 minhaCor ">
+              <img src="produto.png" class="card-img-top meuTamanho" alt="Bolo">
+              <div class="card-body">
+                <h5 class="card-title">Bebedouro</h5>
+                <p class="card-text">Esse é o nosso bebedouro,nosso bebedouro utiliza luz UV para matar microorganismos,ajudando na prevenção de viros e doenças<br>
+                  aproveite os nosso produtos!
+                </p>
+              </div>
+              <!-- Add around -->
+              <div class="mb-5 d-flex justify-content-around">
+                <h5>R$30,00</h5>
+                <a href="#" class="btn btn-primary">Adicionar</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-12 col-md-12 col-lg-4 g-5">
+            <!-- <div class="card" style="width: 18rem;"> -->
+            <div class="card h-100 minhaCor">
+              <img src="garrafa.JPG" class="card-img-top meuTamanho" alt="Produto">
+              <div class="card-body">
+                <h5 class="card-title">Garrafa</h5>
+                <p class="card-text">Garrafa Aquaplus,uma garrafa termica que ajuda a contrentar a tempetatura da sua bebida <br>
+                  aproveite o nosso produto!
+                </p>
+              </div>
+              <!-- Add around -->
+              <div class="mb-5 d-flex justify-content-around">
+                <h5>R$30,00</h5>
+                <a href="#" class="btn btn-primary">Adicionar</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-12 col-md-12 col-lg-4 g-5">
+            <!-- <div class="card" style="width: 18rem;"> -->
+            <div class="card h-100 minhaCor">
+              <img src="caneca.JPG" class="card-img-top meuTamanho" alt="Produto">
+              <div class="card-body">
+                <h5 class="card-title">Caneca</h5>
+                <p class="card-text">Essa é a nossa caneca Aquaplus,uma linda caneca que vc podera usar no seu dia a dia<br>
+                  aproveite o nosso produto
+                </p>
+              </div>
+              <!-- Add around -->
+              <div class="mb-5 d-flex justify-content-around">
+                <h5>R$30,00</h5>
+                <a href="#" class="btn btn-primary">Adicionar</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+  </main>
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/JrO2dtUxSUg?si=lIWryx7759bunzWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+  <section class="contato m-5 fs-3">
+    <h2 class="titulo-contato text-center">Entre em Contato</h2>
+    <div class="container">
+      <!-- Linha com margin x auto -->
+      <div class="row mx-auto text-center" style="width: 20%;">
+        <div class="col"><a href="#">✉</a></div>
+        <div class="col"><a href="#">ⓕ</a></div>
+        <div class="col"><a href="#">☏</a></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="bg-secondary py- text-center margem">
+    <img src="logo final.jpg" class="logo2" alt="Imagem da marca" class="log-imagem">
+    <p class="copyright text-light m-0">&copy; Copyright AguaPlus 2023</p>
+    <p> <strong>By Letícia Fraga </strong></p>
+  </footer>
+
+
+
+
+  <!-- Modal-->
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em Contato com o Técnico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            <br>
+            <label for="exampleFormControlInput2" class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deixe seu Comentário</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+   
+   <script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1737973-RB5GKV5HD9NS39H6/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+    </script>
+</body>
+</html>
+
